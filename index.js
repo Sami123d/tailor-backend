@@ -19,6 +19,7 @@ app.use(cors());
 
 app.use("/api/auth", authRoute);
 
+
 mongoose
   .connect(process.env.MONGODB_URI)
   .then(() => {
